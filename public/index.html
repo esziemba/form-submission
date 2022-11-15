@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Registartion Form</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<div class="container">
+		<form action="/" method="post" class='form'>
+			<h1>Sign Up</h1>
+			<div class="field">
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name" pattern="^[\w'\-,.][^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]]{2,}$"
+					placeholder="Enter your Full Name" required />
+				<small></small>
+			</div>
+			<div class="field">
+				<label for="email">Email:</label>
+				<input type="text" id="email" name="email" pattern="^[\w'\-,][^0-9_!¡?÷?¿/\\+=#$%ˆ&*(){}|~<>;:[\]]{2,}$"
+					placeholder="Enter your Email Address" required />
+				<small></small>
+			</div>
+			<div class="field">
+				<label for="password">Password:</label>
+				<input type="text" id="password" name="password" placeholder="Create a Password" required />
+				<small></small>
+			</div>
+			<div class="field">
+				<label for="job">Occupation:</label>
+				<form class="dropdown-group">
+					<select id="occupation" size="1" name="occupation" required>
+						<option value="" selected="selected">Select Occupation</option>
+						<option value='Software Development'>Software Development</option>
+						<option value='Sales'>Sales</option>
+						<option value='Customer Support'>Customer Support</option>
+					</select>
+					<small></small>
+			</div>
+			<div class="field">
+				<label for="state">State:</label>
+				<form class="dropdown-group">
+					<select id="state" size="1" name="state" required>
+						<option value="" selected="selected">Select State</option>
+						<option value="WI">Wisconsin</option>
+						<option value="IL">Illinois</option>
+						<option value="AL">Alabama</option>
+					</select>
+					<small></small>
+			</div>
+			<div class="field">
+				<button type="submit" class="full">Subscribe</button>
+			</div>
+		</form>
+	</div>
+	<script src="app.js"></script>
+</body>
+
+</html>
